@@ -1,0 +1,383 @@
+@media (max-width: 576px ){
+    
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "menu-principal"
+    "filter"
+    "main"
+    "footer"
+    ;
+
+}
+
+.menu-principal {
+    grid-area: menu-principal;
+}
+
+.filter {
+    grid-area: filter;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* Estilos Menu */
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #409750;
+    color: white;
+    padding: 5px  10px;
+    font-size: 18px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+}
+
+.marca i {
+    padding-right: 5px;
+}
+
+.list {
+    display: none;
+}
+
+
+/* Estilo Filtro */
+
+.filter {
+    text-align: center;
+    padding: 15px;
+    background-color: #AAB7B8;
+    color: white;
+}
+
+.filter h3 {
+    margin: 10px;
+}
+
+.filter select {
+    padding-top: 0px;
+    padding: 5px 120px;
+    border-radius: 5px;
+}
+
+/* Estilos Main */
+
+.main {
+
+    background-color: #ECF0F1 ;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0px;
+}
+
+
+.card {
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    border: solid;
+    border-width: 2px;
+    box-shadow: #AAB7B8;
+    width: 20rem;
+}
+
+.card img {
+    width: 20rem;
+}
+
+.card button {
+    margin-bottom: 10px;
+    background-color: #409750;
+    padding: 5px 50px;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.paginas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.contenido-pagina {
+    list-style: none;
+}
+
+.nav-pagina {
+    text-decoration: none;
+    padding: 10px;
+    border:  1px solid;
+    color: black;
+    border-color: gray;
+}
+
+.paginas .contenido-pagina:first-child .nav-pagina {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.paginas .contenido-pagina:last-child .nav-pagina {
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* Estilos Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #17202A;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.footer i {
+    padding-top: 10px;
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.footer p {
+    margin-top: 5px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+}
+
+/* Vista desde los 576px */
+
+
+
+@media (min-width: 576px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        "menu-principal filter"
+        "menu-principal main"
+        "footer main"
+        ;
+        height: 100vh;
+        grid-template-columns: 274px auto;
+    }
+
+    .menu-principal {
+        grid-area: menu-principal;
+    }
+
+    .filter {
+        grid-area: filter;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    /* Estilos Menu */
+
+    .menu-principal {
+        display: flex;
+        flex-direction: column;
+        background-color: #409750;
+    }
+    .marca {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    .marca i {
+        margin: 5px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+
+    .bars {
+        display: none;
+    }
+
+    /* Estilo Filtro */
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        background-color: #AAB7B8;
+        color: white;
+    }
+
+    .filter h3 {
+        margin: 10px;
+    }
+
+    .filter select {
+        padding-top: 0px;
+        padding: 5px 30%;
+        border-radius: 5px;
+    }
+
+    /* Estilos Main */
+
+    .main {
+        background-color: #ECF0F1 ;
+    }
+
+    .main-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .card {
+        border-color: black;
+        border-radius: 10px;
+        background-color: white;
+        text-align: center;
+        border: solid;
+        border-width: 2px;
+        box-shadow: #AAB7B8;
+        width: 20rem;
+    }
+
+    .card img {
+        width: 20rem;
+    }
+
+    .card button {
+        margin-bottom: 10px;
+        background-color: #409750;
+        padding: 5px 50px;
+        border-width: 1px;
+        border-radius: 10px;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .paginas {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 0px;
+        margin-top: 3rem;
+    }
+    
+    .contenido-pagina {
+        list-style: none;
+    }
+    
+    .nav-pagina {
+        text-decoration: none;
+        padding: 10px;
+        border:  1px solid;
+        color: black;
+        border-color: gray;
+    }
+    
+    .paginas .contenido-pagina:first-child .nav-pagina {
+        border-radius: 5px 0px 0px 5px;
+    }
+    
+    .paginas .contenido-pagina:last-child .nav-pagina {
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    /* Estilos Footer */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #17202A;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .footer i {
+        padding-top: 10px;
+        font-size: 25px;
+        margin: 0 5px;
+    }
+
+    .footer p {
+        margin-top: 5px;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
